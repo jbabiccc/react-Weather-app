@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+body{
+  font-family: "Open Sans", serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper{
+  background-color: orange;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main{
+  height: 90vh;
+  background-color: #fff;
+  box-shadow: 0px 13px 40px -12px rgba(0,0,0,0.75);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title-container{
+  background-image: url('../src/img/74388827_514360922502710_6582957590748069888_n.jpg');
+  height: 90vh;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  
+}
+.title-container div{
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
   color: white;
+  font-size: 40px;
+  text-shadow: #f16051 0px 0px 10px;
+
+}
+.title-container1{
+  background-color:#333333;
+}
+.title-container1 form{
+    margin-top: 50px;;
+    text-align: center;
+    
+}
+.title-container1 div{
+    margin-top: 40px;
+    margin-left: 70px;
+    
+    font-size: xx-large;
+}
+.title-container1 div p{
+  margin-top: 10px;
+  width: 70%;
+  border-bottom: 1px solid grey;;
+  color: #f16051;
+}
+.title-container1 div p span{
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+input[type="text"] {
+  background-color: transparent;
+  border: 0;
+  border-bottom: solid 1px #f16051;
+  width: 30%;
+  padding-bottom: 4px;
+  color: #fff !important;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="text"] { 
+    outline: none;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0 30px #333333 inset;
+    -webkit-text-fill-color: #fff !important;
+}
+
+button {
+  border: 0;
+  padding: 8px 20px;
+  margin: 0 2px;
+  border-radius: 2px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #f16051;
+  color: #fff;
+  font-weight: 100;
+}
+
+button:active {
+  outline: none;
 }
